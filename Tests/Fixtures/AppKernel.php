@@ -64,6 +64,7 @@ class AppKernel extends Kernel
         $container->loadFromExtension('framework', [
             'secret' => 'secret',
             'templating' => ['engines' => 'twig'],
+            'assets' => ['enabled' => false],
         ]);
     }
 }
