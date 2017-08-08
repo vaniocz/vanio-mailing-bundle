@@ -9,15 +9,16 @@
         {"name": "Adam Hojka"}
     ],
     "require": {
-        "php": "7.0.*",
+        "php": "^7.0",
         "symfony/swiftmailer-bundle": "^2.4",
         "symfony/twig-bundle": "^3.1",
-        "vanio/easy-mailer": "^0.1@dev"
+        "vanio/easy-mailer": "^0.1",
+        "symfony/templating": "^3.3"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.5",
         "symfony/framework-bundle": "^3.1",
-        "vanio/coding-standards": "^0.1@dev"
+        "vanio/coding-standards": "^0.1"
     },
     "autoload": {
         "psr-4": {"Vanio\\MailingBundle\\": ""},
@@ -28,9 +29,11 @@
     },
     "scripts": {
         "test": "\"vendor/bin/phpunit\"",
-        "lint": "\"vendor/bin/phpcs\" --standard=vendor/vanio/coding-standards/ruleset.xml --extensions=php --encoding=utf-8 --ignore=var,vendor,AppKernel.php .",
-        "fix": "\"vendor/bin/phpcbf\" --standard=vendor/vanio/coding-standards/ruleset.xml --extensions=php --encoding=utf-8 --no-patch --ignore=var,vendor,AppKernel.php ."
+        "lint": "\"vendor/bin/phpcs\" --standard=ruleset.xml --extensions=php --encoding=utf-8 --ignore=var,vendor,AppKernel.php .",
+        "fix": "\"vendor/bin/phpcbf\" --standard=ruleset.xml --extensions=php --encoding=utf-8 --no-patch --ignore=var,vendor,AppKernel.php ."
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
         "branch-alias": {
             "dev-master": "0.1.x-dev"
