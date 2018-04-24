@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": "^7.0",
-        "symfony/swiftmailer-bundle": "^2.4",
+        "symfony/swiftmailer-bundle": "^2.4 || ^3.0",
         "symfony/twig-bundle": "^3.1",
         "vanio/easy-mailer": "^0.1",
         "symfony/templating": "^3.3"
