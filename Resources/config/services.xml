@@ -28,5 +28,7 @@
             <argument type="service" id="vanio_mailing.templating.engine_adapter" />
             <argument type="service" id="vanio_mailing.mailer_adapter" />
         </service>
+
+        <service id="%vanio_mailing.mailer.class%" alias="vanio_mailing.mailer"/>
     </services>
 </container>
