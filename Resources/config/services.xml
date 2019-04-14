@@ -6,7 +6,7 @@
 >
     <parameters>
         <parameter key="vanio_mailing.templating.engine_adapter.class">Vanio\EasyMailer\Template\TwigAdapter</parameter>
-        <parameter key="vanio_mailing.templating.twig_embed_extension.class">Vanio\EasyMailer\Template\TwigEmbedExtension</parameter>
+        <parameter key="vanio_mailing.templating.twig_extension.class">Vanio\EasyMailer\Template\TwigExtension</parameter>
         <parameter key="vanio_mailing.mailer_adapter.class">Vanio\EasyMailer\Mailer\SwiftMailerAdapter</parameter>
         <parameter key="vanio_mailing.mailer.class">Vanio\EasyMailer\EasyMailer</parameter>
     </parameters>
@@ -16,7 +16,7 @@
             <argument type="service" id="twig" />
         </service>
 
-        <service id="vanio_mailing.templating.twig_embed_extension" class="%vanio_mailing.templating.twig_embed_extension.class%" public="false">
+        <service id="vanio_mailing.templating.twig_extension" class="%vanio_mailing.templating.twig_extension.class%" public="false">
             <tag name="twig.extension" />
         </service>
 
