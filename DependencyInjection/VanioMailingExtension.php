@@ -16,6 +16,13 @@ class VanioMailingExtension extends Extension
      */
     public function load(array $configs, ContainerBuilder $container)
     {
-        (new XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config')))->load('services.xml');
+        $config = $this->processConfiguration(new Configuration, $configs);
+        $loader = new XmlFileLoader($container, new FileLocator(sprintf('%s/../Resources/config', __DIR__)));
+        $loader->load('services.xml');
+        $container->setParameter('vanio_mailing', $config);
+
+        foreach ($config as $key => $value) {
+            $container->setParameter("vanio_mailing.$key", $value);
+        }
     }
 }
