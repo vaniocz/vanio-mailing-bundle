@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b002dd9a5fa81e50ad93aacf070bad1a",
+    "content-hash": "e369ed6158dd19a1561b012cc0596430",
     "packages": [
         {
             "name": "doctrine/lexer",
@@ -1401,17 +1401,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vaniocz/easy-mailer.git",
-                "reference": "f6a0376d7670bf0344479729a436985dbd257cb8"
+                "reference": "2df2a7152f0d583f140491336bd067544a359692"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vaniocz/easy-mailer/zipball/f6a0376d7670bf0344479729a436985dbd257cb8",
-                "reference": "f6a0376d7670bf0344479729a436985dbd257cb8",
+                "url": "https://api.github.com/repos/vaniocz/easy-mailer/zipball/2df2a7152f0d583f140491336bd067544a359692",
+                "reference": "2df2a7152f0d583f140491336bd067544a359692",
                 "shasum": ""
             },
             "require": {
                 "html2text/html2text": "^4.0",
-                "pelago/emogrifier": "^1.2 || ^2.0",
+                "pelago/emogrifier": "^1.2 || ^2.0 || ^3.0",
                 "php": "^7.0",
                 "swiftmailer/swiftmailer": "^5.4 || ^6.0",
                 "twig/twig": "^1.24 || ^2.0"
@@ -1449,7 +1449,11 @@
                 "e-mail",
                 "e-mail sending"
             ],
-            "time": "2018-09-19T17:23:21+00:00"
+            "support": {
+                "issues": "https://github.com/vaniocz/easy-mailer/issues",
+                "source": "https://github.com/vaniocz/easy-mailer/tree/master"
+            },
+            "time": "2021-03-31T07:25:40+00:00"
         }
     ],
     "packages-dev": [
