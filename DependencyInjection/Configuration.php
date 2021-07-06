@@ -8,8 +8,8 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder;
-        $treeBuilder->root('vanio_mailing')
+        $treeBuilder = new TreeBuilder('vanio_mailing');
+        $treeBuilder->getRootNode()
             ->children()
                 ->arrayNode('send_retry')
                     ->prototype('scalar')->end()
